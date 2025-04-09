@@ -1,13 +1,124 @@
 * {
     margin: 0;
-    padding: 0;
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
+header {
+    max-width: 1920px;
+    width: 100%;
+    height: 80px;
+}
+header .container {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 80px;
+}
+header .logo {
+    font-size: 20px;
+    font-weight: 400;
+}
+.burger {
+    width: 16px;
+    height: 16px;
+    display: none;
+    flex-direction: column;
+    gap: 2px;
+}
+.burger .Elem {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+.header_menu {
+    display: flex;
+    gap: 44px;
+}
+.header_menu a {
+    color: rgba(0, 0, 0, 0.541);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+}
+.header_menu a:hover {
+    text-decoration: underline;
+}
+.header_menu-left {
+    display: flex;
+    gap:16px;
+}
+.header_menu-left img {
+cursor: pointer;
+}
+/*1 секция*/
+#styl {
+    width: 100%;
+    height: 704px;
+}
+#styl .container {
+    max-width: 1920px;
+    width: 100%;
+    height: 704px;
+    padding: 0px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-menu-main {
+    display: flex;
+    background-color: #2A254B;
+    max-width: 1280px;
+    height: 684px;
+    width: 1480px;
 
+}
+.container-menu-left {
+    display: flex;
+    flex-direction: column;
+}
+.up-menu {
+    height: 50%;
+
+}
+.down-menu {
+    height: 50%;
+    display: flex;
+    align-items: end;
+}
+.container-up_menu {
+    width: 513px;
+    height: 187px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 60px;
+}
+.container-up_menu span {
+   font-size: 32px;
+   color: #FFFFFF;
+   font-weight: 400;
+}
+.container-up_menu button {
+    border: none;
+    width: 172px;
+    height: 56px;
+    background-color: #F9F9F926;
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: 100;
+ }
+ .text-down_menu {
+    padding: 60px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 400;
+ }
+/* 2 секция */
 #Goods {
     width: 100%;
     height: 761px;
@@ -122,6 +233,7 @@ body {
     color: #2A254B;
     border: none;
     cursor: pointer;
+    background-color: #F9F9F9;
 
 }
 
