@@ -32,7 +32,7 @@ header .logo {
 }
 .burger .Elem {
     width: 100%;
-    height: 2px;
+    height: 1px;
     background-color: black;
 }
 .header_menu {
@@ -54,6 +54,18 @@ header .logo {
 }
 .header_menu-left img {
 cursor: pointer;
+}
+@media (max-width: 734px) {
+    header .container {
+        padding: 0px 24px;
+    }
+    .header_menu {
+        display: none;
+    }
+    .burger {
+        cursor: pointer;
+        display: flex;
+    }
 }
 /*1 секция*/
 #styl {
@@ -119,6 +131,9 @@ cursor: pointer;
     font-weight: 400;
  }
 /* 2 секция */
+.Goods-card a {
+    text-decoration: none;
+}
 #Goods {
     width: 100%;
     height: 761px;
@@ -244,4 +259,130 @@ cursor: pointer;
 .studio-button button:active {
     background-color: #dbdbdb;
     transform: scale(0.98);
+}
+/* Подвал */
+
+footer {
+    width: 100%;
+    height: 414px;
+    background-color: #2A254B;
+}
+footer .container {
+    width: 100%;
+    height: 414px;
+    padding: 58px 83px 56px 82px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+.up-footer-menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 56px;
+    border-bottom:  solid 1px #4E4D93;
+}
+.left-menu-footer {
+    display: flex;
+    gap: 90px;
+}
+.down-menu_footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.down-menu_footer span {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+.item-menu span {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+.item-menu ul li a {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+
+}
+.item-menu ul li {
+    list-style: none;
+}
+.item-menu ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.item-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.label-form {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+.form1 input[type="text"] {
+    width: 496px;
+    height: 60px;
+    background-color: #FFFFFF26;
+    border: none;
+}
+.form1 input[type="text"]::placeholder {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 32px;
+}
+.form1 input[type="submit"] {
+    color: #2A254B;
+    font-size: 20px;
+    font-weight: 400;
+    width: 131px;
+    height: 60px;
+    border: none;
+    margin-left: -5px;
+    margin-top: 8px;
+}
+.icon-menu_footer {
+    display: flex;
+    gap: 24px;
+}
+
+@media (max-width: 734px) {
+    .left-menu-main {
+        background-color: #dbdbdb00;
+    }
+    .left-menu-main img {
+        display: none;
+    }
+    #styl {
+        background-color: #2A254B;
+        height: 502px;
+    }
+    #styl .container {
+        height: 502px;
+    }
+    .container-up_menu {
+        padding-top: 50px;
+        width: 342px;
+        height: 148px;
+    }
+    .container-up_menu button {
+        width: 100%;
+        height: 60px;
+        padding: 20px 0px;
+    }
+    .text-down_menu {
+        margin-top: 0px;
+    }
+    .down-menu {
+        align-items: start;
+    }
 }
