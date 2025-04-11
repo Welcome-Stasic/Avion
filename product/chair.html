@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Стул</title>
     <link rel="stylesheet" href="../css/chair.css">
 </head>
+
 <body>
     <header>
         <div class="container">
-            <a style="text-decoration: none; color: black;" href="../index.html"
-                class="logo" id="logo">Avion</a>
+            <a style="text-decoration: none; color: black;" href="../index.html" class="logo" id="logo">Avion</a>
             <div class="header_menu">
                 <a href="#">Plan pots</a>
                 <a href="#">Ceramics</a>
@@ -35,6 +36,55 @@
     </header>
     <main>
         <section id="chair">
+            <div class="container">
+                <img class="chair_img" src="../assets/chair.jfif" alt="стул" width="607px" height="661px">
+                <div class="left-content_chair">
+                    <div class="up-title-price">
+                        <span>The Dandy Chair</span>
+                        <span>£250</span>
+                    </div>
+                    <div class="product-description">
+                        <div class="discription-title">Product description</div>
+                        <span>A timeless design, with premium materials features as one of our<br> most popular and iconic pieces. The dandy chair is perfect for any<br> stylish living space with beech legs and lambskin leather upholstery.</span>
+                    </div>
+                    <div class="dimension">
+                        <div class="dimensions-title">
+                            Dimensions
+                        </div>
+                        <div class="elem">
+                            <div class="item">
+                                <span>Height</span>
+                                <span>110cm</span>
+                            </div>
+                            <div class="line-dimensions"></div>
+                            <div class="item">
+                                <span>Width</span>
+                                <span>75cm</span>
+                            </div>
+                            <div class="line-dimensions"></div>
+                            <div class="item">
+                                <span>Depth</span>
+                                <span>50cm</span>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="#" class="form-chair">
+                        <div class="Quantitity">
+                            <span>Quantitity</span>
+                            <div class="input-container">
+                                <div class="minus">-</div>
+                                <input type="number" step="1" min="1" inputmode="numeric" value="1" name="num" class="num" readonly>
+                                <div class="plus">+</div>
+                            </div>
+                        </div>
+                        <div class="button-form">
+                            <button class="blue-button">Add to cart</button>
+                            <button class="white-button">Save to favorites</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
         </section>
     </main>
     <footer>
@@ -76,8 +126,7 @@
                     <form action="#" class="form1">
                         <label class="label-form">Join our mailing
                             list</label><br>
-                        <input type="text" class="input-email"
-                            placeholder="your@email.com">
+                        <input type="text" class="input-email" placeholder="your@email.com">
                         <input type="submit" value="Sign up">
                     </form>
                 </div>
@@ -96,4 +145,5 @@
         </div>
     </footer>
 </body>
+
 </html>
