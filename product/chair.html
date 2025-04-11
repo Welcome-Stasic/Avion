@@ -144,6 +144,20 @@
             </div>
         </div>
     </footer>
+        <script>
+        const minus = document.getElementById('minus');
+        const plus = document.getElementById('plus');
+        let input = document.getElementById('input') || 1;
+        minus.addEventListener('click', (e) => {
+            if (input.value > 1) {
+                input.value = parseInt(input.value) - 1;
+            }
+        });
+
+        plus.addEventListener('click', (e) => {
+            input.value = parseInt(input.value) + 1;
+        });
+    </script>
 </body>
 
 </html>
