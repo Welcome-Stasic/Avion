@@ -39,7 +39,16 @@ header .logo {
     height: 16px;
     display: none;
     flex-direction: column;
+    justify-content: center;
     gap: 2px;
+}
+
+.card-element {
+    transition: all 0.2s;
+}
+
+.card-element:hover {
+    transform: scale(1.03);
 }
 
 .burger .Elem {
@@ -47,11 +56,14 @@ header .logo {
     height: 1px;
     background-color: black;
 }
-
-.header_menu {
+.container-menu-wrapper {
     display: flex;
     gap: 44px;
+    transition: all 1.5s;
+
 }
+
+
 
 .header_menu a {
     color: rgba(0, 0, 0, 0.541);
@@ -65,6 +77,7 @@ header .logo {
 }
 
 .header_menu-left {
+    z-index: 100;
     display: flex;
     gap: 16px;
 }
@@ -79,10 +92,66 @@ header .logo {
     }
     .header_menu {
         display: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        gap: 44px;
+        width: 200px;
+        height: 600px;
+        background: #ffffff;
+        justify-content: center;
+        flex-direction:  column;
+        animation: anim 0.5s;
     }
+    @keyframes anim {
+        from {
+            transform: translateX(200px);
+        }
+        to {
+            transform: translateX(0px);
+        }
+        
+    }
+    .container-menu-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        width: 200px;
+        height: 500px;
+    }
+    .header_menu.show {
+        z-index: 50;
+        display: flex; 
+    }
+
     .burger {
+        z-index: 100;
         cursor: pointer;
         display: flex;
+        transition: all 0.2s;
+
+    }
+    .burger .Elem {
+        transition: all 0.2s;
+        opacity: 1;
+        
+    }
+    .burger.active .Elem:nth-child(1) {
+        display: none;
+        opacity: 0;
+    }
+    .burger.active .Elem:nth-child(4) {
+        display: none;
+    }
+    .burger.active .Elem:nth-child(2) {
+        border-radius: 2px;
+        transform:translateY(1px) rotate(45deg);
+    }
+    .burger.active .Elem:nth-child(3) {
+        border-radius: 2px;
+        transform:translateY(-2px) rotate(-45deg);
     }
 }
 

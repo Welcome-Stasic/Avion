@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Стул</title>
     <link rel="stylesheet" href="../css/chair.css">
 </head>
-
 <body>
     <header>
         <div class="container">
-            <a style="text-decoration: none; color: black;" href="../index.html" class="logo" id="logo">Avion</a>
-            <div class="header_menu">
-                <a href="#">Plan pots</a>
-                <a href="#">Ceramics</a>
-                <a href="#">Tables</a>
-                <a href="#">Chairs</a>
-                <a href="#">Crockery</a>
-                <a href="#">Tableware</a>
-                <a href="#">Cutlery</a>
+            <a style="text-decoration: none; color: black;" href="../index.html"
+                class="logo" id="logo">Avion</a>
+            <div class="header_menu" id="header_menu">
+                <div class="container-menu-wrapper">
+                    <a href="#">Plan pots</a>
+                    <a href="#">Ceramics</a>
+                    <a href="#">Tables</a>
+                    <a href="#">Chairs</a>
+                    <a href="#">Crockery</a>
+                    <a href="#">Tableware</a>
+                    <a href="#">Cutlery</a>
+                </div>
             </div>
             <div class="header_menu-left">
                 <img src="../assets/icon/Search.png" alt="поиск">
                 <img src="../assets/icon/Shopping--cart.png" alt="корзина">
                 <img src="../assets/icon/User--avatar.png" alt="аватар">
-                <div class="burger">
+                <div class="burger" id="burger">
                     <div class="Elem"></div>
                     <div class="Elem"></div>
                     <div class="Elem"></div>
@@ -37,7 +38,8 @@
     <main>
         <section id="chair">
             <div class="container">
-                <img class="chair_img" src="../assets/chair.jfif" alt="стул" width="607px" height="661px">
+                <img class="chair_img" src="../assets/chair.jfif" alt="стул"
+                    width="607px" height="661px">
                 <div class="left-content_chair">
                     <div class="up-title-price">
                         <span>The Dandy Chair</span>
@@ -45,7 +47,11 @@
                     </div>
                     <div class="product-description">
                         <div class="discription-title">Product description</div>
-                        <span>A timeless design, with premium materials features as one of our<br> most popular and iconic pieces. The dandy chair is perfect for any<br> stylish living space with beech legs and lambskin leather upholstery.</span>
+                        <span>A timeless design, with premium materials features
+                            as one of our<br> most popular and iconic pieces.
+                            The dandy chair is perfect for any<br> stylish
+                            living space with beech legs and lambskin leather
+                            upholstery.</span>
                     </div>
                     <div class="dimension">
                         <div class="dimensions-title">
@@ -73,16 +79,18 @@
                             <span>Quantitity</span>
                             <div class="input-container">
                                 <div class="minus" id="minus">-</div>
-                                <input type="number" step="1" min="1" inputmode="numeric" value="1" name="num" class="num" id="input" readonly>
+                                <input type="number" step="1" min="1"
+                                    inputmode="numeric" value="1" name="num"
+                                    class="num" id="input" readonly>
                                 <div class="plus" id="plus">+</div>
                             </div>
                         </div>
                         <div class="button-form">
                             <button class="blue-button">Add to cart</button>
-                            <button class="white-button">Save to favorites</button>
+                            <button class="white-button">Save to
+                                favorites</button>
                         </div>
                     </form>
-
                 </div>
             </div>
         </section>
@@ -126,7 +134,8 @@
                     <form action="#" class="form1">
                         <label class="label-form">Join our mailing
                             list</label><br>
-                        <input type="text" class="input-email" placeholder="your@email.com">
+                        <input type="text" class="input-email"
+                            placeholder="your@email.com">
                         <input type="submit" value="Sign up">
                     </form>
                 </div>
@@ -144,21 +153,40 @@
             </div>
         </div>
     </footer>
-        <script>
+    <script>
         document.addEventListener('DOMContentLoaded', (e) => {
             const minus = document.getElementById('minus');
             const plus = document.getElementById('plus');
             let input = document.getElementById('input') || 1;
             minus.addEventListener('click', (e) => {
                 if (input.value > 1) {
-                input.value = parseInt(input.value) - 1;
+                    input.value = parseInt(input.value) - 1;
                 }
             });
             plus.addEventListener('click', (e) => {
                 input.value = parseInt(input.value) + 1;
-           });
+            });
+        });
+        const burger = document.getElementById('burger');
+        const menu = document.getElementById('header_menu');
+        function toggleMenu() {
+            menu.classList.toggle('show');
+            burger.classList.toggle('active');
+        }
+        if (burger) {
+            burger.addEventListener('click', function(event) {
+                event.stopPropagation();
+                toggleMenu();
+            });
+        }
+        document.addEventListener('click', function(event) {
+            if (menu && menu.classList.contains('show') && !menu
+                .contains(event.target) && !burger.contains(event
+                    .target)) {
+                menu.classList.remove('show');
+                burger.classList.remove('active');
+            }
         });
     </script>
 </body>
-
 </html>
