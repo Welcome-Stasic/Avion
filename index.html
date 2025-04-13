@@ -43,7 +43,8 @@
                             <div class="container-up_menu">
                                 <span>The furniture brand for the future, with
                                     timeless designs</span>
-                                <button>View collection</button>
+                                <button class="button-collection">View
+                                    collection</button>
                             </div>
                         </div>
                         <div class="down-menu">
@@ -103,6 +104,25 @@
                 </div>
             </div>
         </section>
+        <section id="club">
+            <div class="container">
+                <div class="title-discr-form">
+                    <div class="title-form">
+                        Join the club and get the benefits
+                    </div>
+                    <span>
+                        Sign up for our newsletter and receive exclusive offers
+                        on new ranges, sales, pop up stores and more
+                    </span>
+                </div>
+                <form class="form_join" id="form_join">
+                    <input type="text" class="input-email_club"
+                        placeholder="your@email.com" id="input">
+                    <input type="submit" value="Sign up"
+                        style="cursor: pointer;">
+                </form>
+            </div>
+        </section>
         <section id="studio">
             <div class="container">
                 <div class="studio-container_items">
@@ -126,6 +146,52 @@
                     </div>
                 </div>
                 <img src="assets/background-studio.png" alt="студия">
+            </div>
+        </section>
+        <section id="different">
+            <div class="container">
+                <div class="title-different">
+                    What makes our brand different
+                </div>
+                <div class="container-different_items">
+                    <div class="item">
+                        <img src="assets/icon/Delivery.png" alt="Доставка"
+                            width="24px">
+                        <div class="title-different_item">
+                            Next day as standard
+                        </div>
+                        <span class="dis-different_item">Order before 3pm and
+                            get your order
+                            the next day as standard</span>
+                    </div>
+                    <div class="item">
+                        <img src="assets/icon/Checkmark--outline.png"
+                            alt="выполнение" width="24px">
+                        <div class="title-different_item">
+                            Made by true artisans </div>
+                        <span class="dis-different_item">Handmade crafted goods
+                            made with
+                            real passion and craftmanship</span>
+                    </div>
+                    <div class="item">
+                        <img src="assets/icon/Purchase.png" alt="Оплата"
+                            width="24px">
+                        <div class="title-different_item">
+                            Unbeatable prices </div>
+                        <span class="dis-different_item">For our materials and
+                            quality you won’t find
+                            better prices anywhere</span>
+                    </div>
+                    <div class="item">
+                        <img src="assets/icon/Sprout.png" alt="Экологичность"
+                            width="24px">
+                        <div class="title-different_item">
+                            Recycled packaging </div>
+                        <span class="dis-different_item">We use 100% recycled
+                            packaging to ensure our
+                            footprint is manageable</span>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -165,12 +231,13 @@
                     </div>
                 </div>
                 <div class="#">
-                    <form action="#" class="form1">
+                    <form class="form1" id="form1">
                         <label class="label-form">Join our mailing
                             list</label><br>
                         <input type="text" class="input-email"
-                            placeholder="your@email.com">
-                        <input type="submit" value="Sign up">
+                            placeholder="your@email.com" id="input">
+                        <input type="submit" value="Sign up"
+                            style="cursor: pointer;">
                     </form>
                 </div>
             </div>
@@ -188,5 +255,6 @@
         </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/file_form.js"></script>
 </body>
 </html>
