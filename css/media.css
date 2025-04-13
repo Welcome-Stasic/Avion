@@ -1,10 +1,11 @@
 @media (max-width: 734px) {
+    
     header .container {
         padding: 0px 24px;
     }
     .header_menu {
         display: none;
-        position: absolute;
+        position: fixed;
         right: 0;
         top: 0;
         gap: 44px;
@@ -42,6 +43,9 @@
         z-index: 100;
         cursor: pointer;
         display: flex;
+        position: fixed;
+        top: 32px;
+        right: 24px;
         transition: all 0.2s;
 
     }
@@ -62,6 +66,9 @@
     .burger.active .Elem:nth-child(3) {
         border-radius: 2px;
         transform:translateY(-2px) rotate(-45deg);
+    }
+    .header_menu-left {
+        margin-right: 30px;
     }
 }
 @media (max-width: 734px) {

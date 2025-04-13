@@ -1,15 +1,16 @@
 @media (max-width: 734px) {
+    
     header .container {
         padding: 0px 24px;
     }
     .header_menu {
         display: none;
-        position: absolute;
+        position: fixed;
         right: 0;
         top: 0;
         gap: 44px;
         width: 200px;
-        height: 600px;
+        height: 100%;
         background: #ffffff;
         justify-content: center;
         flex-direction:  column;
@@ -42,17 +43,18 @@
         z-index: 100;
         cursor: pointer;
         display: flex;
+        position: fixed;
+        top: 32px;
+        right: 24px;
         transition: all 0.2s;
 
     }
     .burger .Elem {
         transition: all 0.2s;
-        opacity: 1;
         
     }
     .burger.active .Elem:nth-child(1) {
         display: none;
-        opacity: 0;
     }
     .burger.active .Elem:nth-child(4) {
         display: none;
@@ -65,7 +67,9 @@
         border-radius: 2px;
         transform:translateY(-2px) rotate(-45deg);
     }
-    
+    .header_menu-left {
+        margin-right: 30px;
+    }
 }
 @media (max-width: 734px) {
     /* 1 секция */
