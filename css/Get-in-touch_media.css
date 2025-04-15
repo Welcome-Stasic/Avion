@@ -1,0 +1,190 @@
+@media (max-width: 734px) {
+    
+    header .container {
+        padding: 0px 24px;
+    }
+    .header_menu {
+        display: none;
+        position: fixed;
+        right: 0;
+        top: 0;
+        gap: 44px;
+        width: 200px;
+        height: 100%;
+        background: #ffffff;
+        justify-content: center;
+        flex-direction:  column;
+        animation: anim 0.5s;
+    }
+    @keyframes anim {
+        from {
+            transform: translateX(200px);
+        }
+        to {
+            transform: translateX(0px);
+        }
+        
+    }
+    .container-menu-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        width: 200px;
+        height: 500px;
+    }
+    .header_menu.show {
+        z-index: 50;
+        display: flex; 
+    }
+
+    .burger {
+        z-index: 100;
+        cursor: pointer;
+        display: flex;
+        position: fixed;
+        top: 32px;
+        right: 24px;
+        transition: all 0.2s;
+
+    }
+    .burger .Elem {
+        transition: all 0.2s;
+        
+    }
+    .burger.active .Elem:nth-child(1) {
+        display: none;
+    }
+    .burger.active .Elem:nth-child(4) {
+        display: none;
+    }
+    .burger.active .Elem:nth-child(2) {
+        border-radius: 2px;
+        transform:translateY(1px) rotate(45deg);
+    }
+    .burger.active .Elem:nth-child(3) {
+        border-radius: 2px;
+        transform:translateY(-2px) rotate(-45deg);
+    }
+    .header_menu-left {
+        margin-right: 30px;
+    }
+    /* 1 секция */
+    
+    /* 2 секция */
+    #studio {
+        width: 100%;
+        height: 828px;
+        background: rgba(249, 249, 249, 1);
+    }
+    
+    #studio .container {
+        width: 100%;
+        height: 603px;
+        display: flex;
+        flex-direction: column;
+    }
+    #personal {
+
+        height: 936px;
+    }
+    #personal .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    #personal .container img {
+        width: 100%;
+        height: 603px;
+    }
+    .studio-container_items {
+        padding: 48px 24px;
+        gap: 56px;
+    }
+    
+    .studio-title {
+        font-size: 20px;
+    }
+    
+    .studio-items span {
+        font-size: 16px;
+    }
+    
+    .studio-button button {
+        width: 100%;
+    }
+    
+    #studio .container img {
+        height: 358px;
+        width: 100%;
+        object-fit: cover;
+    }
+        /* 4 секция */
+        #different {
+            height: 757px;
+            display: flex;
+            justify-content: center;
+        }
+        #different .container {
+            width: 100%;
+            gap: 36px;
+            padding-left: 24px;
+            align-items: start;
+        }
+        .container-different_items {
+            display: flex;
+            gap: 28px;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+        .container-different_items .item {
+            width: 266px;
+            height: 124px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .title-different {
+            font-size: 20px;
+        }
+        /* подвал */
+        footer {
+            height: 668px;
+        }
+        
+        footer .container {
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 40px;
+            flex-direction: column;
+            gap: 24px;
+        }
+        
+        .up-footer-menu {
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 17px;
+            padding-bottom: 12px;
+        }
+        
+        .left-menu-footer {
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 48px;
+        }
+        
+        .down-menu_footer {
+            justify-content: center;
+        }
+        
+        .down-menu_footer span {
+            font-size: 16px;
+        } 
+        .form1 input[type="text"] {
+            width: 190px;
+        }
+        .icon-menu_footer {
+           display: none;
+        }
+}
