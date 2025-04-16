@@ -230,7 +230,9 @@
           }
         });
         plus.addEventListener("click", (e) => {
-          input.value = parseInt(input.value) + 1;
+          if (input.value < 99) {
+            input.value = parseInt(input.value) + 1;
+          }
         });
       });
       const burger = document.getElementById("burger");
