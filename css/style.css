@@ -295,11 +295,12 @@ header .logo {
 .form_join {
     display: flex;
 }
+
 .form_join input[type="email"] {
     width: 341px;
     height: 60px;
+    border: 5px solid rgba(255, 255, 255, 0);
     background-color: #e7e7e7;
-    border: none;
     color: #2A254B;
     font-size: 20px;
     font-weight: 400;
