@@ -1,26 +1,18 @@
-document.addEventListener('DOMContentLoaded', (e) => { 
-    const form = document.getElementById('form1');
-    const input = document.getElementById('inputEmail');
-    form.addEventListener('submit', (e) => {
-        const email = input.value;
-        let valid = true;
+const form = document.querySelector('form');
+const input = document.querySelector('input');
+const pattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    let valid = true;
+    function onInput() {
+      if (isEmailValid(input.value)) {
+        input.style.borderColor = '#b6e3bd';
+      } else {
+        input.style.borderColor = '#e3b6b6';
+      }
+    }
 
-        function val() {
-            if (!validEmail(email) || email === "") {
-                alert('Ошибка: Введите корректный электронный адрес');
-                valid = false;
-            }
-    
-            if (!valid) {
-                e.preventDefault();
-            } else {
-                alert('Успешная регистрация');
-            }
-        }
+    input.addEventListener('input', onInput);
 
-        function validEmail(value) {
-            const pattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-            return pattern.test(input.value);
-        }
-    });
-});
+    function isEmailValid(value) {
+      return pattern.test(value);
+      }
+   

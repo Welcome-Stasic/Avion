@@ -1,21 +1,33 @@
+   const burger = document.getElementById('burger');
+   const menu = document.getElementById('header_menu');
+   
+   function toggleMenu() {
+      menu.classList.toggle('show');
+      burger.classList.toggle('active');
+   }
+   
+   if (burger) {
+      burger.addEventListener('click', function(event) {
+         event.stopPropagation();
+         toggleMenu();
+      });
+   }
+   
+   document.addEventListener('click', function(event) {
+      if (menu && menu.classList.contains('show') && !menu.contains(event.target) && !burger.contains(event.target)) {
+         menu.classList.remove('show');
+         burger.classList.remove('active');
+      }
+   });
 
-   const form = document.querySelector('form');
-   const input = document.querySelector('input');
-   const pattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-       let valid = true;
-       function onInput() {
-         if (isEmailValid(input.value)) {
-           input.style.borderColor = '#b6e3bd';
-         } else {
-           input.style.borderColor = '#e3b6b6';
-         }
-       }
 
-       input.addEventListener('input', onInput);
+const collectionButton = document.getElementById('more-btn');
+const collectionMore = document.querySelector('.Goods-card-down');
+const goodsSection = document.querySelector('#Goods');
 
-       function isEmailValid(value) {
-         return pattern.test(value);
-         }
-      
-
+collectionButton.addEventListener('click', () => {
+   collectionMore.classList.toggle('open');
+   goodsSection.classList.toggle('open');
+   collectionButton.style.display = "none";
+});
 
