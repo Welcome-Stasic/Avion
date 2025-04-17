@@ -184,13 +184,31 @@ header .logo {
     color: #2a254b;
     margin-bottom: 27px;
 }
-
 .Goods-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.Goods-card-up {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     cursor: pointer;
     user-select: none;
+}
+.Goods-card-down {
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+    user-select: none;
+}
+.Goods-card-down.open {
+    display: flex;
+  }
+#Goods.open {
+    height: 1150px;
 }
 
 .Goods-card a {
@@ -235,7 +253,7 @@ header .logo {
     background-color: #dbdbdb;
 }
 
-.Goods-button button:active {
+.Goods-button-up,.Goods-button-down button:active {
     background-color: #dbdbdb;
     transform: scale(0.98);
 }
@@ -277,7 +295,7 @@ header .logo {
 .form_join {
     display: flex;
 }
-.form_join input[type="text"] {
+.form_join input[type="email"] {
     width: 341px;
     height: 60px;
     background-color: #e7e7e7;
@@ -288,7 +306,7 @@ header .logo {
     padding-left: 32px;
 }
 
-.form_join input[type="text"]::placeholder {
+.form_join input[type="email"]::placeholder {
     color: #2A254B;
     font-size: 20px;
     font-weight: 400;
@@ -490,7 +508,7 @@ footer .container {
     color: white;
 }
 
-.form1 input[type="text"] {
+.form1 input[type="email"] {
     width: 496px;
     height: 60px;
     background-color: #ffffff26;
@@ -501,7 +519,7 @@ footer .container {
     padding-left: 32px;
 }
 
-.form1 input[type="text"]::placeholder {
+.form1 input[type="email"]::placeholder {
     color: white;
     font-size: 20px;
     font-weight: 400;

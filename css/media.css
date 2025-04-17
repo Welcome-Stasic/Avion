@@ -138,9 +138,17 @@
         font-size: 16px;
         font-weight: 400;
     }
-    .Goods-card {
+    .Goods-card-up {
         row-gap: 20px;
         flex-wrap: wrap;
+    }
+    .Goods-card-down {
+        row-gap: 20px;
+        flex-wrap: wrap;
+    }
+    #Goods.open {
+        height: 1300px;
+
     }
     /* 3 секция */
     #club .container {
@@ -159,7 +167,7 @@
     .title-form {
         font-size: 20px;
     }
-    .form_join input[type="text"] {
+    .form_join input[type="email"] {
         width: 211px;
         height: 60px;
     }
@@ -261,7 +269,7 @@
     .down-menu_footer span {
         font-size: 16px;
     } 
-    .form1 input[type="text"] {
+    .form1 input[type="email"] {
         width: 190px;
     }
     .icon-menu_footer {

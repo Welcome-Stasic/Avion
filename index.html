@@ -6,6 +6,10 @@
     <title>Avion</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+    <meta
+    name="description"
+    content="Сайт для покупки каечственных дизайнерских вещей для уютного проживания"
+  />
 </head>
 <body>
     <header>
@@ -68,41 +72,85 @@
             <div class="container">
                 <div class="Goods-title">New ceramics</div>
                 <div class="Goods-card">
-                    <div class="card-element"><a href="product/chair.html"><img
-                                src="assets/first-item.png" alt="товар">
-                            <div class="description-card">
-                                <span>The Dandy chair</span>
-                                <span>£250</span>
-                            </div>
-                        </a>
+                    <div class="Goods-card-up">
+                        <div class="card-element"><a
+                                href="product/chair.html"><img
+                                    src="assets/first-item.png" alt="товар">
+                                <div class="description-card">
+                                    <span>The Dandy chair</span>
+                                    <span>£250</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-element"><a
+                                href="product/chair.html"><img
+                                    src="assets/second-item.png" alt="товар">
+                                <div class="description-card">
+                                    <span>Rustic Vase Set</span>
+                                    <span>£155</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-element"><a
+                                href="product/chair.html"><img
+                                    src="assets/third-item.png" alt="товар">
+                                <div class="description-card">
+                                    <span>The Silky Vase</span>
+                                    <span>£125</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-element"><a
+                                href="product/chair.html"><img
+                                    src="assets/fourth-item.png" alt="товар">
+                                <div class="description-card">
+                                    <span>The Lucy Lamp</span>
+                                    <span>£399</span>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="card-element"><a href="product/chair.html"><img
-                                src="assets/second-item.png" alt="товар">
-                            <div class="description-card">
-                                <span>Rustic Vase Set</span>
-                                <span>£155</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card-element"><a href="product/chair.html"><img
-                                src="assets/third-item.png" alt="товар">
-                            <div class="description-card">
-                                <span>The Silky Vase</span>
-                                <span>£125</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card-element"><a href="product/chair.html"><img
-                                src="assets/fourth-item.png" alt="товар">
-                            <div class="description-card">
-                                <span>The Lucy Lamp</span>
-                                <span>£399</span>
-                            </div>
-                        </a>
+                    <div class="Goods-card-down">
+                        <div class="card-element"><a
+                                href="product/chair.html"><img
+                                    src="assets/second-item.png" alt="товар">
+                                <div class="description-card">
+                                    <span>The Dandy chair</span>
+                                    <span>£250</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-element"><a
+                                href="product/chair.html"><img
+                                    src="assets/first-item.png" alt="товар">
+                                <div class="description-card">
+                                    <span>Rustic Vase Set</span>
+                                    <span>£155</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-element"><a
+                                href="product/chair.html"><img
+                                    src="assets/fourth-item.png" alt="товар">
+                                <div class="description-card">
+                                    <span>The Silky Vase</span>
+                                    <span>£125</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-element"><a
+                                href="product/chair.html"><img
+                                    src="assets/third-item.png" alt="товар">
+                                <div class="description-card">
+                                    <span>The Lucy Lamp</span>
+                                    <span>£399</span>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="Goods-button">
-                    <button>View collection</button>
+                    <button id="more-btn">View collection</button>
                 </div>
             </div>
         </section>
@@ -119,7 +167,7 @@
                 </div>
                 <form class="form_join" id="form_join">
                     <input type="text" class="input-email_club"
-                        placeholder="your@email.com" id="input">
+                        placeholder="your@email.com" id="inputEmail">
                     <input type="submit" value="Sign up"
                         style="cursor: pointer;">
                 </form>
@@ -238,7 +286,7 @@
                     <form class="form1" id="form1">
                         <label class="label-form">Join our mailing
                             list</label><br>
-                        <input type="text" class="input-email"
+                        <input type="email" class="input-email"
                             placeholder="your@email.com" id="input">
                         <input type="submit" value="Sign up"
                             style="cursor: pointer;">

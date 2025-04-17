@@ -19,3 +19,15 @@
          burger.classList.remove('active');
       }
    });
+
+
+const collectionButton = document.getElementById('more-btn');
+const collectionMore = document.querySelector('.Goods-card-down');
+const goodsSection = document.querySelector('#Goods');
+
+collectionButton.addEventListener('click', () => {
+   collectionMore.classList.toggle('open');
+   goodsSection.classList.toggle('open');
+   collectionButton.style.display = "none";
+});
+

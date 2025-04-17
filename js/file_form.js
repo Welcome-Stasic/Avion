@@ -1,14 +1,26 @@
-document.addEventListener('DOMContentLoaded', (e) => {
-const form = document.getElementById('form1');
-const input = document.getElementById('input');
-var f = "dataEmail.txt";
-function writeTextFile(afilename, output)
-{
-    var txtFile =new File(afilename);
-    txtFile.writeln(output);
-    txtFile.close();
-}
-form.addEventListener('submit', (e) => {
-    writeTextFile(f, input.Value)
-});
+document.addEventListener('DOMContentLoaded', (e) => { 
+    const form = document.getElementById('form1');
+    const input = document.getElementById('inputEmail');
+    form.addEventListener('submit', (e) => {
+        const email = input.value;
+        let valid = true;
+
+        function val() {
+            if (!validEmail(email) || email === "") {
+                alert('Ошибка: Введите корректный электронный адрес');
+                valid = false;
+            }
+    
+            if (!valid) {
+                e.preventDefault();
+            } else {
+                alert('Успешная регистрация');
+            }
+        }
+
+        function validEmail(value) {
+            const pattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            return pattern.test(input.value);
+        }
+    });
 });
