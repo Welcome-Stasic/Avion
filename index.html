@@ -25,7 +25,7 @@
                     <a href="#">Cutlery</a>
                 </div>
             </div>
-            <div class="header_menu-left">
+            <div class="header_menu-left" id="header_menu-left">
                 <img src="assets/icon/Search.webp" alt="поиск" />
                 <img src="assets/icon/Shopping--cart.webp" alt="корзина" />
                 <img src="assets/icon/User--avatar.webp" alt="аватар" />
@@ -171,6 +171,32 @@
                 </form>
             </div>
         </section>
+        <div class="modal" id="modal">
+            <div class="background-modal">
+                <div class="container-modal">
+                    <div class="close-modal" id="close-modal"
+                        style="cursor: pointer;">+</div>
+                    <div class="container">
+                        <div class="title-discr-form">
+                            <div class="title-form">
+                                Join the club and get the benefits
+                            </div>
+                            <span>
+                                Sign up for our newsletter and receive exclusive
+                                offers
+                                on new ranges, sales, pop up stores and more
+                            </span>
+                        </div>
+                        <form class="form_join" id="form_join">
+                            <input type="email" class="input-email_club"
+                                placeholder="your@email.com" id="inputEmail">
+                            <input type="submit" value="Sign up"
+                                style="cursor: pointer;">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         <section id="studio">
             <div class="container">
                 <div class="studio-container_items">
@@ -188,7 +214,7 @@
                             London interior design community.</span>
                     </div>
                     <div class="studio-button">
-                        <button>
+                        <button class="studio-btn" id="studio-btn">
                             Get in touch
                         </button>
                     </div>

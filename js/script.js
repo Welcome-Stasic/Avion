@@ -20,7 +20,7 @@
       }
    });
 
-
+// доплнительные элементы коллекции
 const collectionButton = document.getElementById('more-btn');
 const collectionMore = document.querySelector('.Goods-card-down');
 const goodsSection = document.querySelector('#Goods');
@@ -31,3 +31,19 @@ collectionButton.addEventListener('click', () => {
    collectionButton.style.display = "none";
 });
 
+// модальное окно
+const modalBtn = document.getElementById('studio-btn');
+const modal = document.getElementById('modal');
+const closeModal = document.getElementById('close-modal');
+function toggleModal() {
+   modal.classList.toggle('open');
+}
+if (modal) {
+modalBtn.addEventListener('click', (e) => {
+   e.preventDefault();
+   toggleModal()
+});
+}
+closeModal.addEventListener('click', (e) => {
+   modal.classList.remove('open');
+});

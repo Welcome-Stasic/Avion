@@ -11,6 +11,7 @@
 */
 
 body {
+    position: relative;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -365,7 +366,7 @@ header .logo {
     color: #505977;
 }
 
-.studio-button button {
+.studio-btn {
     padding: 14px 22px;
     font-size: 20px;
     font-weight: 400;
@@ -375,11 +376,11 @@ header .logo {
     background-color: #f9f9f9;
 }
 
-.studio-button button:hover {
+.studio-btn:hover {
     background-color: #dbdbdb;
 }
 
-.studio-button button:active {
+.studio-btn:active {
     background-color: #dbdbdb;
     transform: scale(0.98);
 }
@@ -542,5 +543,49 @@ footer .container {
     gap: 24px;
     cursor: pointer;
 }
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+}
+.modal.open {
+    display: flex;
+}
+.background-modal {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000054;
+}
+.container-modal {
+    margin: 24px;
+    position: relative;
+    width: 500px;
+    height: 300px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    padding: 20px;
+    display: flex;
+    gap: 100px;
+    flex-direction: column;
+    justify-content: center;
+}
+.modal .container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.close-modal {
 
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    transform: rotate(45deg);
+}
 

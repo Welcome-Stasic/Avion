@@ -96,6 +96,17 @@ header .logo {
     justify-content: center;
     align-items: center;
 }
+#brand .container {
+    width: 400px;
+    height: 56px;
+    margin: 32px 24px;
+}
+#brand .container span {
+    font-size: 20px;
+    font-weight: 400;
+    color: #2A254B;
+}           
+
 /* 2 секция*/
 
 #studio {
