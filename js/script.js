@@ -30,7 +30,6 @@ collectionButton.addEventListener('click', () => {
    goodsSection.classList.toggle('open');
    collectionButton.style.display = "none";
 });
-
 // модальное окно
 const modalBtn = document.getElementById('studio-btn');
 const modal = document.getElementById('modal');
