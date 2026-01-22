@@ -187,4 +187,31 @@
         .icon-menu_footer {
            display: none;
         }
+        .article-section {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.article-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.article-content h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.article-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.article-content strong {
+    color: #000;
+    font-weight: 600;
+}
 }
